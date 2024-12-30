@@ -1,7 +1,11 @@
+import UserHeader from "components/user/user.header";
+import { Outlet } from "react-router-dom";
+
 const Layout = () => {
   return (
     <>
-      <h1 className="text-4xl text-blue-600">Hello</h1>
+      <UserHeader />
+      <Outlet />
     </>
   );
 };
